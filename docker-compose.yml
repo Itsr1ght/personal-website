@@ -2,8 +2,6 @@ services:
   app:
     build: .
     restart: unless-stopped
-    ports:
-      - '0.0.0.0:8080:8080'
     networks:
       - my_bridge_network
 
