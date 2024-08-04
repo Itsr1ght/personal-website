@@ -2,9 +2,3 @@ services:
   app:
     build: .
     restart: unless-stopped
-    networks:
-      - my_bridge_network
-
-networks:
-  my_bridge_network:
-    driver: bridge

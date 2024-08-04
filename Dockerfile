@@ -1,9 +1,6 @@
 # Get started with a build env with Rust nightly
 FROM rustlang/rust:nightly-bullseye as builder
 
-# If you’re using stable, use this instead
-# FROM rust:1.70-bullseye as builder
-
 # Install cargo-binstall, which makes it easier to install other
 # cargo extensions like cargo-leptos
 RUN wget https://github.com/cargo-bins/cargo-binstall/releases/latest/download/cargo-binstall-x86_64-unknown-linux-musl.tgz
@@ -36,9 +33,9 @@ WORKDIR /app
 # Set any required env variables and
 ENV RUST_LOG="info"
 ENV APP_ENVIRONMENT="production"
-ENV LEPTOS_SITE_ADDR="0.0.0.0:8080"
+ENV LEPTOS_SITE_ADDR="0.0.0.0:90"
 ENV LEPTOS_SITE_ROOT="site"
-EXPOSE 8080
+EXPOSE 90
 # Run the server
 CMD ["/app/personal-website"]
 
