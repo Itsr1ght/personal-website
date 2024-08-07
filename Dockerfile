@@ -33,9 +33,9 @@ WORKDIR /app
 # Set any required env variables and
 ENV RUST_LOG="info"
 ENV APP_ENVIRONMENT="production"
-ENV LEPTOS_SITE_ADDR="0.0.0.0:90"
+ENV LEPTOS_SITE_ADDR="0.0.0.0:8000"
 ENV LEPTOS_SITE_ROOT="site"
-EXPOSE 90
+EXPOSE 8000
 # Run the server
 CMD ["/app/personal-website"]
 
