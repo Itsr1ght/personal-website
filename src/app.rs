@@ -2,7 +2,8 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
-use super::subpage::{homepage::*, not_found::*};
+use super::subpage::{homepage::HomePage, not_found::NotFound};
+
 
 #[component]
 pub fn App() -> impl IntoView {

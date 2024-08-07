@@ -41,3 +41,6 @@ async fn favicon(
         "{site_root}/favicon.ico"
     ))?)
 }
+
+#[cfg(not(feature = "ssr"))]
+fn main(){}
