@@ -6,15 +6,20 @@ pub fn HomePage() -> impl IntoView {
 
     view! {
         <div>
-            <div class="tabs">
-                <button on:click=move|_| set_active_tab("home".to_string())>Home</button>
-                <button on:click=move|_| set_active_tab("about".to_string())>About</button>
-                <button on:click=move|_| set_active_tab("contact".to_string())>Contact</button>
+            <div class="container">
+                <div class="box"><h1 class="tabs">BJ</h1></div>
+                <div class="tabs">
+                    <button on:click=move|_| set_active_tab("home".to_string())>Home</button>
+                    <button on:click=move|_| set_active_tab("projects".to_string())>Projects</button>
+                    <button on:click=move|_| set_active_tab("about".to_string())>About</button>
+                    <button on:click=move|_| set_active_tab("contact".to_string())>Contact</button>
+                </div>
             </div>
             <div class="tab-content">{
                 move|| {
                     match active_tab.get().as_str(){
                         "home" => view! {<p>Home</p>},
+                        "projects" => view! {<p>Projects</p>},
                         "about" => view! {<p>About</p>},
                         "contact" => view! {<p>Contact</p>},
                         _ => view!{<p>404</p>},

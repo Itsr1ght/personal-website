@@ -1,27 +1,48 @@
 body {
-    background-color: #17153B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.box{
+    height: 50px;
+    width: 40;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 20px; 
+    background-color: #000000; 
+    color: #ffffff;
 }
 
 .tabs {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    cursor: pointer;
 }
 
 .tabs button {
-    padding: 10px 20px;
-    border: 1px solid #ddd;
-    background-color: #433D8B;
+    padding: 25px 20px;
+    border: 1px solid #000000;
+    background-color: #000000;
     margin-right: 5px;
-    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    color: #ffffff;
 }
 
 .tabs button:hover {
-    background-color: #2E236C;
+    background-color: #000000;
 }
 
 .tab-content {
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 20px 20px;
     border-radius: 0 0 4px 4px;
+    color: #ffffff;
 }
 
