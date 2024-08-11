@@ -1,9 +1,27 @@
 body {
-	font-family: sans-serif;
-	text-align: center;
+    background-color: #17153B;
 }
 
-p{
-	font-family: sans-serif;
-	font-size: larger;
+.tabs {
+    display: flex;
+    cursor: pointer;
 }
+
+.tabs button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    background-color: #433D8B;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tabs button:hover {
+    background-color: #2E236C;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 0 0 4px 4px;
+}
+

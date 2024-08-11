@@ -4,15 +4,14 @@ use leptos_router::*;
 
 use super::subpage::{homepage::HomePage, not_found::NotFound};
 
-
 #[component]
 pub fn App() -> impl IntoView {
     provide_meta_context();
 
     view! {
+        <Meta name="color-scheme" content="dark"/>
         <Stylesheet id="leptos" href="/pkg/personal-website.css"/>
         <Title text="Welcome to My Site!"/>
-
         <Router>
             <main>
                 <Routes>
@@ -23,3 +22,4 @@ pub fn App() -> impl IntoView {
         </Router>
     }
 }
+
