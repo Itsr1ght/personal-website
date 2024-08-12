@@ -26,6 +26,14 @@ pub fn HomePage() -> impl IntoView {
                     }
                 }
             }
+                <div class="foot">
+                    <div class="footer">
+                        <div>made with</div>
+                        <a href="https://leptos.dev/" target="_blank">
+                            <img src="https://www.leptos.dev/images/header_logo.svg" height=20 alt="Leptos logo" />
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     }

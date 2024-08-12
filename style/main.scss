@@ -28,11 +28,10 @@ body {
 
 .tabs button {
     padding: 25px 20px;
-    border: 1px solid #000000;
+    border: 1px #000000;
     background-color: #000000;
     margin-right: 5px;
     cursor: pointer;
-    color: #ffffff;
 }
 
 .tabs button:hover {
@@ -40,9 +39,36 @@ body {
 }
 
 .tab-content {
+    display: grid;
     border: 1px solid #ddd;
     padding: 20px 20px;
     border-radius: 0 0 4px 4px;
     color: #ffffff;
+    height: 100vh;
 }
 
+.foot{
+    align-self: end;
+}
+
+.foot a{
+    padding: 5px;
+    color: inherit;
+    text-decoration:underline;
+}
+
+.foot a:hover {
+    padding: 5px;
+    color: inherit;
+    text-decoration:underline;
+}
+
+.footer{
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    border-radius: 0 0 2px 2px;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
