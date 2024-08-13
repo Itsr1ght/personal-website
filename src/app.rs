@@ -12,6 +12,7 @@ pub fn App() -> impl IntoView {
         <Meta name="color-scheme" content="dark"/>
         <Stylesheet id="leptos" href="/pkg/personal-website.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <Title text="Welcome to My Site!"/>
         <Router>
             <main>
