@@ -5,9 +5,11 @@ pub fn HomePage() -> impl IntoView {
     let (active_tab, set_active_tab) = create_signal("home".to_string());
 
     view! {
-        <div>
+        <div class="main">
+            <div class="box">
+                <h1 class="main-logo">BJ</h1>
+            </div>
             <div class="container">
-                <div class="box"><h1 class="tabs">BJ</h1></div>
                 <div class="tabs">
                     <button on:click=move|_| set_active_tab("home".to_string())>Home</button>
                     <button on:click=move|_| set_active_tab("projects".to_string())>Projects</button>
