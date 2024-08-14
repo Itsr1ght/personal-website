@@ -7,7 +7,7 @@ pub fn HomePage() -> impl IntoView {
     view! {
         <div class="main">
             <div class="box">
-                <h1 class="main-logo">BJ</h1>
+                <h1 class="main-logo">BILAL JAFAR</h1>
             </div>
             <div class="container">
                 <div class="tabs">
