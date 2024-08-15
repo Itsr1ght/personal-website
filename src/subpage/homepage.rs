@@ -17,24 +17,24 @@ pub fn HomePage() -> impl IntoView {
                     <button on:click=move|_| set_active_tab("contact".to_string())>Contact</button>
                 </div>
             </div>
-            <div class="tab-content">{
-                move|| {
-                    match active_tab.get().as_str(){
-                        "home" => view! {<p>Home</p>},
-                        "projects" => view! {<p>Projects</p>},
-                        "about" => view! {<p>About</p>},
-                        "contact" => view! {<p>Contact</p>},
-                        _ => view!{<p>404</p>},
-                    }
+        </div>
+        <div class="tab-content">{
+            move|| {
+                match active_tab.get().as_str(){
+                    "home" => view! {<p>Home</p>},
+                    "projects" => view! {<p>Projects</p>},
+                    "about" => view! {<p>About</p>},
+                    "contact" => view! {<p>Contact</p>},
+                    _ => view!{<p>404</p>},
                 }
             }
-                <div class="foot">
-                    <div class="footer">
-                        <div>made with</div>
-                        <a href="https://leptos.dev/" target="_blank">
-                            <img src="https://www.leptos.dev/images/header_logo.svg" height=20 alt="Leptos logo" />
-                        </a>
-                    </div>
+        }
+            <div class="foot">
+                <div class="footer">
+                    <div>made with</div>
+                    <a href="https://leptos.dev/" target="_blank">
+                        <img src="https://www.leptos.dev/images/header_logo.svg" height=20 alt="Leptos logo" />
+                    </a>
                 </div>
             </div>
         </div>
