@@ -1,3 +1,8 @@
+use super::hometab::about::AboutTab;
+use super::hometab::contact::ContactTab;
+use super::hometab::home::HomeTab;
+use super::hometab::projects::ProjectTab;
+
 use leptos::*;
 
 #[component]
@@ -21,11 +26,21 @@ pub fn HomePage() -> impl IntoView {
         <div class="tab-content">{
             move|| {
                 match active_tab.get().as_str(){
-                    "home" => view! {<p>Home</p>},
-                    "projects" => view! {<p>Projects</p>},
-                    "about" => view! {<p>About</p>},
-                    "contact" => view! {<p>Contact</p>},
-                    _ => view!{<p>404</p>},
+                    "home" => view! {
+                        <div><HomeTab/></div>
+                    },
+                    "projects" => view! {
+                        <div><ProjectTab/></div>
+                    },
+                    "about" => view! {
+                       <div><AboutTab/></div>
+                    },
+                    "contact" => view! {
+                        <div><ContactTab/></div>
+                    },
+                    _ => view!{
+                        <div><p>404</p></div>
+                    },
                 }
             }
         }
