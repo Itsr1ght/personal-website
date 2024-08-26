@@ -1,13 +1,9 @@
-<picture>
-    <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_Solid_White.svg" media="(prefers-color-scheme: dark)">
-    <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">
-</picture>
 
-# Leptos Starter Template
+# My Personal Website
 
-This is a template for use with the [Leptos](https://github.com/leptos-rs/leptos) web framework and the [cargo-leptos](https://github.com/akesson/cargo-leptos) tool.
+This is source for my personal website that store the my résumé, my projects and others
 
-## Creating your template repo
+## Building Instruction
 
 If you don't have `cargo-leptos` installed you can install it with
 
@@ -16,12 +12,6 @@ If you don't have `cargo-leptos` installed you can install it with
 Then run
 
 `cargo leptos new --git leptos-rs/start`
-
-to generate a new project template (you will be prompted to enter a project name).
-
-`cd {projectname}`
-
-to go to your newly created project.
 
 Of course, you should explore around the project structure, but the best place to start with your application code is in `src/app.rs`.
 
@@ -65,8 +55,19 @@ Although it is not recommended, you can also run your project without server int
 
 `trunk serve --open --features csr`
 
-This may be useful for integrating external tools which require a static site, e.g. `tauri`.
 
-## Licensing
+## Building the docker image
 
-This template itself is released under the Unlicense. You should replace the LICENSE for your own application with an appropriate license if you plan to release it publicly.
+To Build docker image use below command
+```
+docker build .
+```
+
+To Build docker image with tag use
+
+```
+docker build -t {tag_name} .
+```
+like in the ```build_for_docker.sh``` file
+
+For build and upload to ```itsr1ght/personal-website-app``` run the ```build_for_docker.sh``` bash file
