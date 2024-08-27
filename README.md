@@ -9,15 +9,18 @@ If you don't have `cargo-leptos` installed you can install it with
 
 `cargo install cargo-leptos --locked`
 
-Then run
+and use 
 
-`cargo leptos new --git leptos-rs/start`
+``` cargo leptos build ```
 
-Of course, you should explore around the project structure, but the best place to start with your application code is in `src/app.rs`.
+For building the project
 
 ## Running your project
 
-`cargo leptos watch`  
+For building and running the website use
+
+`cargo leptos watch`
+
 By default, you can access your local project at `http://localhost:3000`
 
 ## Installing Additional Tools
